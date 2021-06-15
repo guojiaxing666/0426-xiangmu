@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./flexible.js"></script>
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(240,242,245);
+        }
+
+      /* 头部 */
+        .top{
+            width: 10rem;
+            height: .853333rem;
+            background-color: #fff;
+            margin-top: 1.173333rem;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .top div:nth-of-type(1){
+            width: .586667rem;
+            height: .586667rem;
+            display: flex;
+            position: absolute;
+            left: .346667rem;
+        }
+        .top div img{
+            width: .586667rem;
+        }
+        .top div:nth-of-type(2){
+            font-size: .64rem;
+            color: #333;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            position: absolute;
+            left: 4.346667rem;
+        }
+        .top div:nth-of-type(3){
+            font-size: .373333rem;
+            color: #333;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            position: absolute;
+            right: .4rem;
+        }
+
+        /* 三个盒子设置共同样式 */
+        .message,.img-list,.question{
+            background: rgba(229, 255, 246, 0.4);   
+            box-sizing: border-box;
+            border: .053333rem solid rgba(113, 228, 177, 0.56);
+            position: relative;
+        }
+        /* 信息部分 */
+        .message{
+            width: 9.173333rem;
+            height: 2.133333rem;
+            margin-top: .586667rem;
+            margin-left: .426667rem;
+            /* opacity: 0.4; */
+            
+        }
+        .message span{
+            font-size: .32rem;
+            color: #5FB28E;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            display: inline-block;
+        }
+        .line{
+            height: .026667rem;
+            width: 8.48rem;
+            box-sizing: border-box;
+            border-top:.026667rem solid #4ADB9C ;
+            position: absolute;
+            top: 1.093333rem;
+            left: .32rem;
+        }
+        .message span:nth-of-type(1){
+            position: absolute;
+            left: .64rem;
+            top: .266667rem;
+        }
+        .message span:nth-of-type(2){
+            position: absolute;
+            left: 4.666667rem;
+            top: .266667rem;
+        }
+        .message span:nth-of-type(3){
+            position: absolute;
+            left: .64rem;
+            top: 1.413333rem;
+        }
+        /* 照片上传区 */
+        .img-list{
+            width: 9.173333rem;
+            height: 3.52rem;
+            margin-left: .426667rem;
+            margin-top: .266667rem;
+            
+
+        }
+        .img-list span{
+            font-size: .426667rem;
+            color: #6DBA99;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            display: inline-block;
+            position: absolute;
+            left: .64rem;
+            top: .266667rem;
+        }
+        .img-list div{
+            width: 5.92rem;
+            height: 1.6rem;
+            display: flex;
+            justify-content: space-between;
+            margin-left: .64rem;
+            margin-top: 1.386667rem;
+        }
+        .img-list div>img{
+            width: 1.36rem;
+            height: 1.36rem;
+        }
+        .img-list div>img:nth-of-type(1){
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+        .img-list div>img:nth-of-type(2),.img-list div>img:nth-of-type(3){
+            margin-top: .133333rem;
+        }
+
+        /* 问题反馈部分 */
+        .question{
+            width: 9.173333rem;
+            height: 2.613333rem;
+            margin-top: .266667rem;
+            margin-left: .426667rem;
+            padding-left: .586667rem;
+            padding-top: .106667rem;
+        }
+        .question span{
+            display: inline-block;
+            width: 7.36rem;
+            height: .906667rem;
+            font-size: .32rem;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #5FB28E;
+            
+        }
+        /* 底部 */
+        .button{
+            width: 7.733333rem;
+            height: 1.2rem;
+            margin-top: 8.133333rem;
+            margin-left: 1.146667rem;
+        }
+        .button img{
+            width: 7.733333rem;
+            height: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+        <div class="top">
+          <div><img src="./图片/01.png" alt=""></div>
+          <div>报修</div>
+          <div>报修记录</div>
+        </div>
+        <div class="message">
+            <span>请输入联系人姓名</span>
+            <span>请输入联系人手机号</span>
+            <div class="line"></div>
+            <span>请输入联系人详细地址</span>
+        </div>
+        <div class="img-list">
+            <span>有图有真相，上传照片：</span>
+            <div>
+                <img src="./图片/03.png" alt="">
+                <img src="./图片/02.png" alt="">
+                <img src="./图片/02.png" alt="">
+            </div>
+        </div>
+        <div class="question">
+            <span>请输入问题的描述，以使我们精准定位，尽快处理。
+                如遇紧急问题，可直接拨打物业电话。</span>
+        </div>
+        <div class="button">
+            <img src="./图片/04.png" alt="">
+        </div>
+
+
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./flexible.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(240,242,245);
+        }
+        /* 头部 */
+         .top{
+            width: 10rem;
+            height: .853333rem;
+            background-color: #fff;
+            margin-top: 1.173333rem;
+            position: relative;
+        }
+        .top div:nth-of-type(1){
+            width: .576rem;
+            height: .576rem;
+            display: flex;
+            position: absolute;
+            left: .346667rem;
+            top: .186667rem;
+        }
+        .top div img{
+            width: .576rem;
+        }
+        .top div:nth-of-type(2){
+            width: 2.56rem;
+            height: .96rem;
+            left: 3.733333rem;
+            position: absolute;
+            display: flex;
+        }
+        .top div:nth-of-type(2)>span{
+            display: inline-block;
+            height: .96rem;
+            line-height: .96rem;
+            font-size: .64rem;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #333333;
+            
+        }
+        .left{
+            width: .586667rem;
+            height: .586667rem;
+            background: url(./图片/三个点.png) no-repeat;
+            background-size: .586667rem;
+            float: right;
+            margin-right: .373333rem;
+            margin-top: .186667rem;
+        }
+
+        /* 状态 */
+        .state{
+            width: 10rem;
+            height: 2.133333rem;
+            background: #66CEA0;
+            position: relative;
+            margin-top: .373333rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+        }
+        .state span{
+            display: inline-block;
+            height: .96rem;
+            font-size: .32rem;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: .96rem;
+        }
+        .img{
+            width: .906667rem;
+            height: .986667rem;
+            background: url(./图片/漏斗.png) no-repeat;
+            background-size:.906667rem .986667rem ;
+        }
+
+        .state2{
+            width: 10rem;
+            height: 2.133333rem;
+            background: #FFFFFF;
+            box-shadow: 0px 0px .133333rem -0.026667rem rgba(0, 0, 0, 0.5);
+            position: relative;
+            margin-top: .266667rem;
+        }
+        .state2 div:nth-of-type(1){
+            width: .533333rem;
+            height: .533333rem;
+            background: url(./图片/绿勾.png);
+            background-size: .533333rem;
+            position: absolute;
+            top: .64rem;
+            left: 1.253333rem;
+        }
+        .state2 div:nth-of-type(2){
+            width: 1.706667rem;
+            height: .053333rem;
+            background: url(./图片/绿线.png);
+            background-size: 1.706667rem .053333rem;
+            position: absolute;
+            top: .853333rem;
+            left: 1.786667rem;
+        }
+        .state2 div:nth-of-type(3){
+            width: .48rem;
+            height: .48rem;
+            background: url(./图片/绿圆.png);
+            background-size: .48rem;
+            position: absolute;
+            top: .666667rem;
+            left: 3.6rem;
+        }
+        .state2 div:nth-of-type(4){
+            width: 1.68rem;
+            height: .053333rem;
+            background: url(./图片/灰线.png);
+            background-size:1.68rem .053333rem ;
+            position: absolute;
+            top: .853333rem;
+            left: 4.186667rem;
+        }
+        .state2 div:nth-of-type(5){
+            width: .32rem;
+            height: .32rem;
+            background: url(./图片/灰圆.png);
+            background-size: .32rem;
+            position: absolute;
+            top: .72rem;
+            left: 5.973333rem;
+        }
+        .state2 div:nth-of-type(6){
+            width: 1.786667rem;
+            height: .053333rem;
+            background: #CFCFCF;
+            border-radius: .053333rem;
+            position: absolute;
+            top: .853333rem;
+            left: 6.4rem;
+        }
+        .state2 div:nth-of-type(7){
+            width: .32rem;
+            height: .32rem;
+            background: url(./图片/灰圆.png);
+            background-size: .32rem;
+            position: absolute;
+            top: .72rem;
+            left: 8.293333rem;
+        }
+        .state2 span{
+            display: inline-block;
+            width: 1.13rem;
+            height: .96rem;
+            font-size: .32rem;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #333333;
+            line-height: .96rem;
+            position: absolute;
+        }
+        .state2 span:nth-of-type(1){
+            top: 1.173333rem;
+            left: 1.04rem;
+            
+        }
+        .state2 span:nth-of-type(2){
+            top: 1.173333rem;
+            left: 3.36rem;
+        }
+        .state2 span:nth-of-type(3){
+            top: 1.173333rem;
+            left: 5.653333rem;
+        }
+        .state2 span:nth-of-type(4){
+            top: 1.173333rem;
+            left: 7.973333rem;
+        }
+
+        /* 信息主体 */
+        .main{
+            width: 10rem;
+            height: 11.013333rem;
+            margin-top: .8rem;
+            background: #fff;
+            box-shadow: 0px 0px .133333rem -0.026667rem rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+        .main-top{
+            width: 1.706667rem;
+            height: .586667rem;
+            margin-left: 4.133333rem;
+            padding-top: .266667rem;
+            font-size: .426667rem;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #333333;
+        }
+        .main-left{
+            width: 1.706667rem;
+            height: 8.426667rem;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            margin-left: .853333rem;
+            margin-top: .533333rem;
+            position: absolute;
+        }
+        .main-left span{
+            display: inline-block;
+            width: 1.706667rem;
+            height: .586667rem;
+            font-size: .426667rem;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #999999;
+            line-height: .586667rem;
+        }
+
+        .main-mid{
+            width: 4.933333rem;
+            height: 8.426667rem;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            position: absolute;
+            left: 3.093333rem;
+            top: 1.386667rem;
+        }
+
+        .main-mid span{
+            display: inline-block;
+            width: 5.146667rem;
+            height: .586667rem;
+            font-size: .426667rem;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #333333;
+            line-height: .586667rem;
+        }
+
+        /* 底部按钮 */
+
+        .footer{
+            width: 7.733333rem;
+            height: 1.2rem;
+            background: url(./图片/取消订单.png) no-repeat;
+            background-size: 7.733333rem 1.2rem;
+            margin-left: 1.146667rem;
+            margin-top: .8rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div><img src="./图片/01.png" alt=""></div>
+          <div><span>报修进度</span></div>
+          <div class="left"></div>
+    </div>
+    <div class="state">
+        <div class="img"></div>
+        <span>正在受理</span>
+    </div>
+    <div class="state2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <span>已受理</span>
+        <span>待派工</span>
+        <span>维修中</span>
+        <span>已完成</span>
+    </div>
+
+    <div class="main">
+        <div class="main-top">报修信息</div>
+        <div class="main-left">
+            <span>联系人</span>
+            <span>联系电话</span>
+            <span>报修类目</span>
+            <span>服务部门</span>
+            <span>报修区域</span>
+            <span>预约时间</span>
+            <span>详细地点</span>
+            <span>报修详情</span>
+        </div>
+        <div class="main-mid">
+            <span>徐XX</span>
+            <span>13548894430</span>
+            <span>灯管维修</span>
+            <span>维修部</span>
+            <span>B区住宅</span>
+            <span>2021-06-01 09:00-11:00</span>
+            <span>B区10栋0912</span>
+            <span>灯泡接触不良</span>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+</body>
+</html>

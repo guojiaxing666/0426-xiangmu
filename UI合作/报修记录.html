@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./flexible.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(240,242,245);
+        }
+        /* 头部 */
+         .top{
+            width: 10rem;
+            height: .853333rem;
+            background-color: #fff;
+            margin-top: 1.173333rem;
+            position: relative;
+        }
+        .top div:nth-of-type(1){
+            width: .576rem;
+            height: .576rem;
+            display: flex;
+            position: absolute;
+            left: .346667rem;
+            top: .186667rem;
+        }
+        .top div img{
+            width: .576rem;
+        }
+        .top div:nth-of-type(2){
+            width: 2.56rem;
+            height: .96rem;
+            left: 3.733333rem;
+            position: absolute;
+            display: flex;
+        }
+        .top div:nth-of-type(2)>span{
+            display: inline-block;
+            height: .96rem;
+            line-height: .96rem;
+            font-size: .64rem;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #333333;
+            
+        }
+
+        /* nav部分 */
+        .nav{
+            width: 4.88rem;
+            height: 1.066667rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 2.24rem;
+            margin-top: .4rem;
+
+        }
+        .nav img{
+            width: 2.346667rem;
+            height: 1.066667rem;
+        }
+        .nav span{
+            display: inline-block;
+            width: 1.28rem;
+            height: .586667rem;
+            font-size: .426667rem;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #333333;
+            line-height: .586667rem;
+        }
+
+        /* 主体 */
+        .main-1{
+            width: 9.36rem;
+            height: 3.36rem;
+            margin-left: .346667rem;
+            margin-top: .586667rem;
+            background: url(./图片/06.png) no-repeat;
+            background-size: 9.36rem 3.36rem;
+            display: flex;
+            
+        }
+        
+        .message{
+            width: 5.573333rem;
+            height: 2.586667rem;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            margin-left: .506667rem;
+            /* margin-top: .346667rem; */
+            padding-top: .346667rem;
+        }
+        .message span, .message-2>span{
+            display: inline-block;
+            height: .533333rem;
+            font-size: .373333rem;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #333333;
+            line-height: .533333rem;
+        }
+        .main-1 div:nth-of-type(2){
+            width: 2.133333rem;
+            height: 3.36rem;
+            display: flex;
+            align-items: center;
+            margin-left: .826667rem;
+        }
+        .main-1 img{
+            width: 2.133333rem;
+            height: .8rem;
+        }
+        .main-2{
+            width: 9.146667rem;
+            height: 3.146667rem;
+            background: #F8F8F8;
+            box-shadow: 0px 0px .133333rem -0.026667rem rgba(0, 0, 0, 0.5);
+            border-radius: .266667rem;
+            margin-left: .453333rem;
+            margin-top: .32rem;
+            display: flex;
+            position: relative;
+        }
+        .message-2{
+            height: 2.586667rem;
+            width: 5.653333rem;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            margin-left: .4rem;
+            padding-top: .24rem;
+        }
+        .btn{
+            width: 2.133333rem;
+            height: .8rem;
+            background: #00A55D;
+            border-radius: .133333rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 1.173333rem;
+            left: 6.8rem;
+        }
+        .btn span{
+            display: inline-block;
+            width: 1.28rem;
+            height: .586667rem;
+            font-size: .426667rem;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: .586667rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div><img src="./图片/01.png" alt=""></div>
+          <div><span>报修记录</span></div>
+    </div>
+    <div class="nav">
+        <img src="./图片/05.png" alt="">
+        <span>已完成</span>
+    </div>
+    <div class="main-1">
+        <div class="message">
+            <span>座椅维修</span>
+            <span>报修所属:公共区域</span>
+            <span>报修时间:2021-06-01  16:26:46</span>
+            <span>维修时间:42栋一楼门口座椅</span>
+            
+        </div>
+        <div><img src="./图片/07.png" alt=""></div>
+    </div>
+    <div class="main-2">
+        <div class="message-2">
+            <span>门窗维修</span>
+            <span>报修所属:个人住宅</span>
+            <span>报修时间:2021-05-29  09:42:50</span>
+            <span>维修时间:10栋1312</span>
+        </div>
+        <div class="btn">
+            <span>维修中</span>
+        </div>    
+    </div>
+</body>
+</html>
